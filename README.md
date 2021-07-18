@@ -82,7 +82,7 @@ This repository contains all the files needed for the interview.
 
   - Install jenkins container from docker.hub
     ```
-    docker run -p 8080:8080 -p 50000:50000 --name jenkins --restart always -v jenkinshome:/var/jenkins_home jenkins/jenkins:lts
+    docker run -p 8080:8080 -p 50000:50000 --name jenkins --restart always --privileged -v jenkinshome:/var/jenkins_home jenkins/jenkins:lts
     ```
   - Get admin password from within the container
     ```
