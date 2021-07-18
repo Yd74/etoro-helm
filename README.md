@@ -4,8 +4,6 @@
 
 This repository contains all the files needed for the interview.
 
-:)
-
 ## Procedure
   
 1.  Connect by SSH to the VM using putty
