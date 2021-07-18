@@ -4,12 +4,6 @@
 
 This repository contains the chart of simple-web
 
-## Prerequisites
-
-- Jenkins credentials
-  - Username: Yarin
-  - Password: Yarin
-
 ## Procedure
   
 1.  Connect by SSH to the VM using putty
@@ -92,7 +86,8 @@ This repository contains the chart of simple-web
     docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
     ```
   - Login jenkins using initialAdminPassword from previous step
-  - Create admin user (Credentials in the prerequisites section)
-  - Create pipeline
-  
-## Notes
+  - Create admin user
+    - Username: Yarin
+    - Password: Yarin 
+  - Create pipeline (see [Jenkinsfile](Jenkinsfile))
+  - Run job
