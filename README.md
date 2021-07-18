@@ -38,6 +38,7 @@ This repository contains all the files needed for the interview.
     ```
 5. Install ingress nginx controller:
   ```
+    helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
   	helm install nginx-ingress ingress-nginx/ingress-nginx \
     --namespace ingress-nginx \
     --set controller.replicaCount=2 \
