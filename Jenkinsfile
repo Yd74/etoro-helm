@@ -12,6 +12,6 @@ node {
         git branch: 'main', url: 'https://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@github.com/Yd74/etoro-helm.git'
 }
     stage('Build') {
-        sh 'helm upgrade simple-web --install $WORKSPACE -f $WORKSPACE/values.yaml'
+        sh 'helm upgrade simple-web --install $WORKSPACE/chart -f $WORKSPACE/chart/values.yaml'
     }
 }
