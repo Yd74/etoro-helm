@@ -2,7 +2,9 @@
 
 ## Description
 
-This repository contains the chart of simple-web
+This repository contains all the files needed for the interview.
+
+:)
 
 ## Procedure
   
