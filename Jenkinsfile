@@ -9,7 +9,7 @@ node {
         sh 'az aks get-credentials --resource-group devops-interview-rg --name yarin-interview-aks --admin'
 }
     stage('Deploy') {
-        git branch: 'dev', url: 'https://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@github.com/Yd74/etoro-helm.git'
+        git branch: 'main', url: 'https://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@github.com/Yd74/etoro-helm.git'
         sh 'helm upgrade simple-web --install $WORKSPACE/chart -f $WORKSPACE/chart/values.yaml'
     }
 }
